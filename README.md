@@ -97,7 +97,7 @@ pero si por accidente se pone un string sin unidad de tiempo entonces lo tomará
 - Si en los roles se encuentra el rol del usuario, devolverá **true** y tendrá acceso al endpoint, de lo contrario devolverá false y arrojará error unauthorized.
 - En resumen, la función **checkRoles** recibe un array de roles, verifica que **user.role** se encuentre en ese array, y si todo bien procede al siguiente middleware.
 - Haciendo la implementación del middleware en la ruta queda de la siguiente manera: 
-```
+```javascript
 router.post(
   '/',
   passport.authenticate('jwt', { session: false }),
