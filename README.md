@@ -53,8 +53,7 @@
     }
 
     const token = jwt.sign(payload, process.env.JWTSECRET, jwtConfig)
-```
-```
+
 - Observaciones: 
     - user es la instancia del usuario obtenido del modelo que tenga la propiedad Id del usuario.
     - Se utiliza sub por conveniencia porque así lo maneja el standar de JWT pero puede usarse el nombre que uno quiera mas info sobre los [claims disponibles aquí](https://datatracker.ietf.org/doc/html/rfc7519#section-4)
