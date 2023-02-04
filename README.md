@@ -180,3 +180,14 @@ router.post(
     return { message: 'Password updated' }
   }
 ```
+
+## DEPLOY
+ - En el deploy se debe mandar estas variables de entorno a parte de la de **DATABASE_URL**
+ ```
+ API_KEY=456987 
+ JWT_SECRET=xd12xd31 J
+ WT_RECOVERY_SECRET=xd98xd76
+  MAILER_EMAIL=email@gmail.com 
+  MAILER_PASSWORD=xd12xd65
+
+ ```
